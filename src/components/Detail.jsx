@@ -69,8 +69,8 @@ const Detail = () => {
               '&:hover': { backgroundColor: '#1565c0' }
             }}
           >
-            Apply Here
-          </MuiLink>
+            Apply 
+	 </MuiLink>
         )}
       </Stack>
 
