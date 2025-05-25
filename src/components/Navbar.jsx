@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 const Navbar = () => {
   return (
     <Stack sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}>
-      <Link to={'/'}>
+      <Link to="/">
         <Box component='img' src='/wearehiring.png' alt='logo' 
 	sx={{ height: '90px', width: '140px', marginLeft: '10px', marginTop: '5px' }}/>
       </Link>

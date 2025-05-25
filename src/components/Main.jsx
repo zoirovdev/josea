@@ -10,7 +10,7 @@ const Main = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await Service.fetching()
+        const response = await Service.fetchAll()
 	setJobs(response.data)
       } catch (error) {
         console.log(error)
