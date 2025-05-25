@@ -11,7 +11,7 @@ const Navbar = () => {
 	sx={{ height: '90px', width: '140px', marginLeft: '10px', marginTop: '5px' }}/>
       </Link>
       <Box sx={{ marginLeft: '300px', display: 'flex', flexDirection: 'row', width: '400px',
-	alignItems: 'center', padding: '5px 8px', backgroundColor: '#f1f1f1',
+	alignItems: 'center', padding: '5px 8px', border: '1px solid #f1f1f1', boxShadow: 1,
 	borderRadius: '10px', gap: '2px'}}>
 	<SearchIcon sx={{ marginLeft: '10px' }}/>
 	<InputBase placeholder='Search' sx={{ marginLeft: '10px', fontSize: '18px' }}/> 

@@ -2,6 +2,7 @@ import axios from 'axios'
 
 
 
+
 const getAllOptions = {
   method: 'GET',
   url: 'https://jsearch.p.rapidapi.com/search',
@@ -13,10 +14,11 @@ const getAllOptions = {
     date_posted: 'all'
   },
   headers: {
-    'x-rapidapi-key': 'd37d1e7c57msha829c12893473e5p16dfdcjsn1fcc844dada6',
+    'x-rapidapi-key': 'f01fa240c6msha5a29e268cd4da5p14a808jsnb10a7b712eb2',
     'x-rapidapi-host': 'jsearch.p.rapidapi.com'
   }
 };
+
 
 
 const getOptions = {
@@ -26,8 +28,8 @@ const getOptions = {
     job_id: '20N57zBfi3eT9BdpAAAAAA==',
     country: 'us'
   },
-    headers: {
-    'x-rapidapi-key': 'd37d1e7c57msha829c12893473e5p16dfdcjsn1fcc844dada6',
+  headers: {
+    'x-rapidapi-key': 'f01fa240c6msha5a29e268cd4da5p14a808jsnb10a7b712eb2',
     'x-rapidapi-host': 'jsearch.p.rapidapi.com'
   }
 };
