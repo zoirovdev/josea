@@ -19,13 +19,12 @@ const Search = () => {
       setLoading(true)
       try {
         const response = await Service.search(q)
-	setTimeout(() => {
-          setJobs(response.data)
-          setLoading(false)
-	}, 1000) 
+        setJobs(response.data)
       } catch (error) {
         setError('Failed to fetch data')
 	setLoading(false)
+      } finally {
+        setLoading(false)
       }
     }
     

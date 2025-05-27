@@ -40,10 +40,10 @@ const searchOptions = {
   method: 'GET',
   url: 'https://jsearch.p.rapidapi.com/search',
   params: {
-    query: 'developer jobs in chicago',
+    query: 'developer jobs in tashkent',
     page: '1',
     num_pages: '20',
-    country: 'us',
+    country: 'uz',
     date_posted: 'all'
   },
   headers: {
