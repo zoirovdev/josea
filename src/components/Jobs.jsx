@@ -12,7 +12,9 @@ const Jobs = ({ jobs }) => {
         padding: 2,
       }}
     >
-      {Array.isArray(jobs) && jobs.map((job) => (
+      {Array.isArray(jobs) && jobs
+        .filter((job, index, self) => index === self.findIndex(j => j.job_id === job.job_id))
+        .map((job) => (
         <Link
           to={`/detail/${job.job_id}`}
           key={job.job_id}
