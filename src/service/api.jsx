@@ -9,7 +9,7 @@ const getAllOptions = {
   params: {
     query: 'developer jobs in chicago',
     page: '1',
-    num_pages: '1',
+    num_pages: '20',
     country: 'us',
     date_posted: 'all'
   },
@@ -34,6 +34,24 @@ const getOptions = {
   }
 };
 
+
+
+const searchOptions = {
+  method: 'GET',
+  url: 'https://jsearch.p.rapidapi.com/search',
+  params: {
+    query: 'developer jobs in chicago',
+    page: '1',
+    num_pages: '20',
+    country: 'us',
+    date_posted: 'all'
+  },
+  headers: {
+    'x-rapidapi-key': 'f01fa240c6msha5a29e268cd4da5p14a808jsnb10a7b712eb2',
+    'x-rapidapi-host': 'jsearch.p.rapidapi.com'
+  }
+};
+
 export const Service = {
   async fetchAll() {
     try {
@@ -47,6 +65,15 @@ export const Service = {
     try {
       getOptions.params.job_id = id
       const response = await axios.request(getOptions)
+      return response.data
+    } catch (error) {
+      console.error(error)
+    }
+  },
+  async search(query){
+    try {
+      searchOptions.params.query = query
+      const response = await axios.request(searchOptions)
       return response.data
     } catch (error) {
       console.error(error)
